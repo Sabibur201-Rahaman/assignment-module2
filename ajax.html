@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print ajax element</title>
+</head>
+<body>
+    URL=https://jsonplaceholder.typicode.com/posts
+    <script>
+        // getPrint()
+        // async function getPrint(){
+        //     let res=await fetch(URL)
+        //     console.log(res)
+        //     let jsonData=res.json()
+        //     document.write(JSON.stringify(jsonData))
+        //     console.log(jsonData)
+        // }
+        getPrint()
+            function getPrint(){
+                let res=fetch(URL).then((res)=>res.json())
+                .then((jsonData)=>document.write(JSON.stringify(jsonData)))
+                
+            }
+
+    </script>
+</body>
+</html>

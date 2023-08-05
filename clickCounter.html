@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clickCounter</title>
+</head>
+<body>
+    <p id="count">0</p>
+    <button id="myButton">clicktoCount</button>
+    <script>
+       let myButton=document.getElementById('myButton')
+       let myCount=document.getElementById('count')
+       let count=0; 
+       myButton.addEventListener('click',function(){
+        count++
+        myCount.innerHTML=count
+       })
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Button Click Example</title>
+</head>
+<body>
+	<button id="myButton">Click Me</button>
+	<div id="myDiv">This is the initial content of the div element.</div>
+
+	<script>
+		var myButton = document.getElementById("myButton");
+		var myDiv = document.getElementById("myDiv");
+
+		myButton.addEventListener("click", function() {
+			myDiv.innerHTML = "This is the new content of the div element.";
+		});
+	</script>
+</body>
+</html>
